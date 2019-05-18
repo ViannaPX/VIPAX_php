@@ -1,2 +1,2 @@
-# VIPAX_php
-VIPAX Admin System em linguagem PHP
+# VIPAX
+VIPAX Admin System
