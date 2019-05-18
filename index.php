@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,9 +20,15 @@
 				<h2 id="subtitulo">Admin System</h2>
 			</div>
 		</header>
+		<?php
+		if(isset($_SESSION['msg'])){
+			echo $_SESSION['msg'];
+			unset($_SESSION['msg']);
+		}
+		?>
 		<fieldset class="formulario">
 			<legend class="decorado" id="legenda">Insira seu Login e Senha</legend>
-			<form action="" method="post">
+			<form action="processa.php" method="POST">
 				<label for="login" class="decorado">Login</label><br>
 				<input type="text" id="login" class="decorado" name="login_usuario" required = "" placeholder="Insira seu login"><br><br>
 

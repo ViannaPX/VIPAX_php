@@ -19,7 +19,7 @@
 		
 		<fieldset class="formulario" id="espaco">
 			<legend class="decorado" id="legenda">Insira seu Login e Senha</legend>
-			<form action="" method="POST">
+			<form action="processa.php" method="POST">
 			
 				<label for="idNome" class="decorado">Nome Completo</label><br>
 				<input type="text" id="idNome" class="decorado" name="nome"  required = "" pattern="[a-zA-Z\s]+$" placeholder="EX: Napoleão Bonaparte"/><br><br>
