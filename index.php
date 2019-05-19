@@ -14,33 +14,44 @@ session_start();
 	</head>
 
 	<body background="static/background2.jpg">
-		<header>
-			<div class="topo">
-				<h1 id="titulo">VIPAX</h1><br>
-				<h2 id="subtitulo">Admin System</h2>
-			</div>
-		</header>
 		<?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg'];
 			unset($_SESSION['msg']);
 		}
 		?>
-		<fieldset class="formulario">
-			<legend class="decorado" id="legenda">Insira seu Login e Senha</legend>
+		<header>
+			<div class="topo">
+				<h1 id="titulo">VIPAX</h1><br>
+				<h2 id="subtitulo">Admin System</h2>
+			</div>
+		</header>
+		<fieldset class="formulario" id="form-login">
+			<center>
+			<legend>Entrar</legend>
+			</center>
 			<form action="processa.php" method="POST">
+				
 				<label for="login" class="decorado">Login</label><br>
-				<input type="text" id="login" class="decorado" name="login_usuario" required = "" placeholder="Insira seu login"><br><br>
-
+				<center>
+				<input type="text" id="login" class="decorado" name="login" required = "" placeholder="Insira seu login"><br><br>
+				</center>
+				
 				<label for="senha" class="decorado">Senha</label><br>
-				<input type="password" id="senha" class="decorado" name="senha_usuario" required = "" placeholder= "Insira sua senha" /> <br><br>
-
+				<center>
+				<input type="password" id="senha" class="decorado" name="senha" required = "" placeholder= "Insira sua senha" /> <br><br>
+				</center>
+				
+				<center>
 				<a href = "home.php"  type="button" class="botao">Entrar</a><br>
 				<p class="decorado"><b>Ou</b></p>
 				<a href="cadastro.php" class="botao">Cadastre-se</a>
+				</center>
 			</form>
 		</fieldset>
 		<footer><a href="https://br.freepik.com/fotos-vetores-gratis/fundo" target="_blank" class="artista">Fundo foto criado por kjpargeter - br.freepik.com</a></footer>
+		
+		
 	</body>
 	
 </html>

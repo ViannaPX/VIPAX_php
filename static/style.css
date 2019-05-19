@@ -63,12 +63,6 @@ div.topo{
 	border-color: rgba(218, 222, 229, 0.5);
     position: relative;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    padding-right: 55px;
-    padding-left: 55px; 
-    padding-top: 25px;
-    padding-bottom: 45px;
     transform: translate(-50%, -50%); 
     border-radius: 50px;
 
@@ -99,8 +93,23 @@ div.topo{
 	text-decoration: none;
 }
 
-#espaco{
-	top: 85%;
+#form-cadastro{
+	top: 75%;
+    left: 50%;
+	width: 10%;
+	padding-right: 50px;
+	padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+#form-login{
+    top: 70%;
+    left: 50%;
+	padding-right: 50px;
+    padding-left: 50px; 
+    padding-top: 25px;
+    padding-bottom: 45px;
 }
 
 /*Texto do Formulário */
@@ -109,12 +118,17 @@ div.topo{
 	color: black;
 }
 
-#legenda{
+legend{
 	border: 0px solid;
 	border-color: rgba(0, 108, 255, 0.75);
-	background-color: rgba(0, 108, 255, 0.75);
+	background-color: rgba(0, 0, 0, 0.75);
 	border-radius: 50px;
-	padding: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-family: 'Baloo Bhai', cursive;
+	color: gold;
 }
 
 
