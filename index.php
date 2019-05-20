@@ -30,23 +30,25 @@ session_start();
 			<center>
 			<legend>Entrar</legend>
 			</center>
-			<form action="processa.php" method="POST">
+			<form action="processa2.php" method="POST">
 				
 				<label for="login" class="decorado">Login</label><br>
 				<center>
-				<input type="text" id="login" class="decorado" name="login" required = "" placeholder="Insira seu login"><br><br>
+				<input type="text" id="login" class="decorado" name="login" required = " " placeholder="Insira seu login"><br><br>
 				</center>
 				
 				<label for="senha" class="decorado">Senha</label><br>
 				<center>
-				<input type="password" id="senha" class="decorado" name="senha" required = "" placeholder= "Insira sua senha" /> <br><br>
+				<input type="password" id="senha" class="decorado" name="senha" required = " " placeholder= "Insira sua senha" /> <br><br>
 				</center>
 				
 				<center>
-				<a href = "home.php"  type="button" class="botao">Entrar</a><br>
+				<a href = "home.php">
+					<button  class = "botao" type = "submit">Entrar</button>
+				</a><br>
 				<p class="decorado"><b>Ou</b></p>
 				<a href="cadastro.php" class="botao">Cadastre-se</a>
-				</center>
+				</center> 
 			</form>
 		</fieldset>
 		<footer><a href="https://br.freepik.com/fotos-vetores-gratis/fundo" target="_blank" class="artista">Fundo foto criado por kjpargeter - br.freepik.com</a></footer>

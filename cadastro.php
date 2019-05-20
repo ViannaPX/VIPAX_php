@@ -50,7 +50,7 @@
 				
 				<center>
 				<a href="index.php">
-					<button  class = "botao" type = "submit">Enviar</button>
+					<button  class = "botao" type = "submit">Enviar</button> 
 				</a>
 				<p class="decorado"><b>Clique no botão e efetue seu login:</b></p>
 				<a href="index.php" class="botao">Login</a>
