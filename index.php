@@ -31,17 +31,17 @@ session_start();
 			<legend>Entrar</legend>
 			</center>
 			<form action="processa2.php" method="POST">
-				
+				//Validação de Login
 				<label for="login" class="decorado">Login</label><br>
 				<center>
 				<input type="text" id="login" class="decorado" name="login" required = " " placeholder="Insira seu login"><br><br>
 				</center>
-				
+				//Validação de Senha
 				<label for="senha" class="decorado">Senha</label><br>
 				<center>
 				<input type="password" id="senha" class="decorado" name="senha" required = " " placeholder= "Insira sua senha" /> <br><br>
 				</center>
-				
+				//Submit
 				<center>
 				<a href = "home.php">
 					<button  class = "botao" type = "submit">Entrar</button>
@@ -53,7 +53,16 @@ session_start();
 		</fieldset>
 		<footer><a href="https://br.freepik.com/fotos-vetores-gratis/fundo" target="_blank" class="artista">Fundo foto criado por kjpargeter - br.freepik.com</a></footer>
 		
-		
+		<script>
+			//Validação null
+			function validar_null(id) {
+				if (document.getElementById(login).value.length == 0) {
+					document.getElementById(login).focus();
+					return true;
+				}
+				else return false;
+			}
+		</script>
 	</body>
 	
 </html>
